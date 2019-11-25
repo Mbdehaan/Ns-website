@@ -1,0 +1,34 @@
+{
+  "name": "development",
+  "version": "1.0.0",
+  "description": "NS website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MBdeHaan",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-include": "^2.4.1",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "acorn": "^6.0.5",
+    "browser-sync": "^2.26.7",
+    "eslint": "^5.12.0",
+    "fsevents": "^2.1.2",
+    "graphicsmagick": "0.0.1",
+    "gulp-cssbeautify": "^1.0.1",
+    "gulp-file-include": "^2.1.1",
+    "gulp-gm": "0.0.9",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-images-resizer": "0.0.5",
+    "gulp-rename": "^1.4.0",
+    "jshint": "^2.9.7",
+    "simplelightbox": "^1.15.1"
+  }
+}

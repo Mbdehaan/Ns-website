@@ -1,0 +1,6 @@
+(function(s){
+s.data["1062_177"]=false;
+for(var i=0;i<s.listeners.length;i++){
+s.listeners[i]("1062_177");
+}
+})(_st.segmenting);

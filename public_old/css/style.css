@@ -1,0 +1,211 @@
+/***************************************************/
+/***************************************************/
+/**   NS.nl Front-end                             **/
+/**   Door: Matthijs de Haan                      **/
+/**   Voor: Hogeschool van Amsterdam              **/
+/**   Communicatie & Multimedia Design            **/
+/**   Versie 1.0                                  **/
+/***************************************************/
+/** Gebruikte tech:                               **/
+/** Gulp, Sass, FileInclude & BrowserSync         **/
+/***************************************************/
+/***************************************************/
+/************************************************/
+/*******<<<<<<<< General styles >>>>>>>>>>>******/
+/************************************************/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap");
+*, :before, :after {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+h4 {
+  font-weight: 200;
+  font-size: 1.875rem; }
+
+header i {
+  position: absolute;
+  font-size: 1.5em;
+  margin-top: 17px;
+  margin-left: -30px; }
+
+i {
+  -webkit-transition: all .1s ease-in;
+  -moz-transition: all .1s ease-in;
+  -ms-transition: all .1s ease-in;
+  -o-transition: all .1s ease-in;
+  transition: all .1s ease-in; }
+
+a {
+  text-decoration: none;
+  color: #0063d3;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+  a:hover, a.active {
+    color: #003082; }
+  a:hover i {
+    padding-left: 3px; }
+
+/************************************************/
+/*******<<<<<<<< Header styles >>>>>>>>>>>*******/
+/************************************************/
+header {
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, 0.15);
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+  header #header_container {
+    max-width: 73.25rem;
+    width: 80%;
+    margin: 0 auto;
+    display: flex; }
+  header .header_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+
+.header_content {
+  width: 100%;
+  display: flex; }
+  .header_content ul.header_container {
+    width: 100%;
+    display: inline-flex; }
+    .header_content ul.header_container li.inactive {
+      display: none; }
+  .header_content .ns_logo {
+    line-height: 60px; }
+
+.header_active {
+  height: 100vh; }
+
+.navigation {
+  margin-top: 20px;
+  position: absolute;
+  max-width: 73.25rem;
+  width: 80%;
+  margin-left: -70px;
+  display: none; }
+
+.header_container-closed {
+  display: flex; }
+
+.header_content-right {
+  justify-content: flex-end;
+  flex-grow: 1;
+  display: flex;
+  line-height: 60px; }
+  .header_content-right li {
+    margin-right: 30px;
+    height: 60px; }
+    .header_content-right li a {
+      padding-left: 35px; }
+
+/****************************/
+/**    Navigation styles    */
+.menu_open {
+  display: none; }
+
+.sub_menu {
+  width: 70%; }
+
+.menu_control {
+  list-style: none;
+  display: flex;
+  margin-left: 10px;
+  line-height: 60px; }
+  .menu_control a {
+    font-weight: 200;
+    padding: 0px 20px 0px 40px; }
+
+#main_menu {
+  width: 30%;
+  height: 70vh;
+  padding: 2rem; }
+  #main_menu ul li {
+    line-height: 40px; }
+    #main_menu ul li a {
+      color: #003082;
+      padding: 10px 10px;
+      font-weight: 200; }
+      #main_menu ul li a i {
+        margin-left: -45px;
+        margin-top: 5px; }
+    #main_menu ul li:hover i {
+      margin-left: -40px; }
+    #main_menu ul li a.current {
+      font-weight: bold; }
+
+.sub_menu {
+  display: none; }
+
+nav.current {
+  width: 75%;
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  overflow-y: scroll;
+  border-left: 1px solid #aeaeae; }
+  nav.current #sub_menu-heading {
+    display: inline-flex;
+    -webkit-column-span: all;
+    column-span: all; }
+    nav.current #sub_menu-heading a {
+      font-weight: 200;
+      color: #0063d3;
+      line-height: 60px;
+      margin-left: 50px; }
+      nav.current #sub_menu-heading a i {
+        font-size: 1em;
+        margin-top: 22px; }
+  nav.current ul {
+    width: 50%;
+    padding-top: 40px;
+    display: block; }
+    nav.current ul li {
+      line-height: 30px; }
+      nav.current ul li a {
+        font-weight: 200;
+        color: #0063d3;
+        padding: 0 0 0 30px;
+        line-height: 30px; }
+        nav.current ul li a i {
+          font-size: .8em;
+          padding: 0;
+          position: relative;
+          padding: 0 15px 0 0; }
+      nav.current ul li:hover i {
+        padding: 0 8px 0 7px; }
+    nav.current ul span.sub_menu-titel {
+      line-height: 20px;
+      font-weight: bold;
+      font-size: 1.1em; }
+      nav.current ul span.sub_menu-titel a {
+        color: #003082;
+        line-height: 30px;
+        padding: 0; }
+  nav.current #sub_menu-heading {
+    width: 100%; }
+
+.sub_menu-list {
+  margin-left: auto; }
+  .sub_menu-list .sub_menu-item {
+    flex-direction: column; }
+    .sub_menu-list .sub_menu-item a {
+      font-weight: bold;
+      color: #003082; }
+
+/************************************************/
+/********<<<<<<<< Main styles >>>>>>>>>>>********/
+/************************************************/

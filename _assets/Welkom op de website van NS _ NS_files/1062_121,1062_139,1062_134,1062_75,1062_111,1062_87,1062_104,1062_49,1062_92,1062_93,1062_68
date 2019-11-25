@@ -1,0 +1,16 @@
+(function(s){
+s.data["1062_49"]=false;
+s.data["1062_139"]=false;
+s.data["1062_93"]=false;
+s.data["1062_92"]=false;
+s.data["1062_104"]=false;
+s.data["1062_134"]=false;
+s.data["1062_87"]=false;
+s.data["1062_75"]=false;
+s.data["1062_121"]=false;
+s.data["1062_111"]=false;
+s.data["1062_68"]=false;
+for(var i=0;i<s.listeners.length;i++){
+s.listeners[i]("1062_49","1062_139","1062_93","1062_92","1062_104","1062_134","1062_87","1062_75","1062_121","1062_111","1062_68");
+}
+})(_st.segmenting);
