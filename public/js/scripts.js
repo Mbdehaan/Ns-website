@@ -1,4 +1,19 @@
 
+$(function() { // Menu is closed!
+    $('.menu_closed').click(function() {
+        $('.menu_closed').toggle();
+        $('.menu_open').toggle();
+
+        $('.header').addClass("header--active");
+
+        $('.navigation').delay(600).fadeToggle(200);
+
+    });
+});
+
+
+
+
 $(function() { //menu is open!
     $('.menu_open').click(function() {
         $('.menu_open').toggle();
@@ -11,17 +26,6 @@ $(function() { //menu is open!
     });
 });
 
-$(function() { // Menu is closed!
-    $('.menu_closed').click(function() {
-        $('.menu_closed').toggle();
-        $('.menu_open').toggle();
-
-        $('.header').addClass("header--active");
-
-        $('.navigation').delay(600).fadeToggle(200);
-
-    });
-});
 
 
 $(document).ready(function(){
